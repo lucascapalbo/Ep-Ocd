@@ -29,7 +29,7 @@ public class ep1OCD {
 	}
 	
 	int[] somaBinarios(int[] bin1, int[] bin2){
-		int[] resultado = new int[bin1.length];
+		int[] resultado = new int[Conversion.max(bin1.length, bin2.length)];
 		int aux;
 		for(int i = bin1.length -1; i > 0; i--){
 			resultado[i] += bin1[i] + bin2[i];
